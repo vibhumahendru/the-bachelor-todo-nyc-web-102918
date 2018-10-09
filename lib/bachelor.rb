@@ -43,7 +43,15 @@ counter
 end
 
 def get_occupation(data, hometown)
-  # code here
+  ans_array = []
+  data.each do |season, array_contestants|
+    array_contestants.each do |each_cont_details|
+      if each_cont_details["hometown"] == hometown
+        ans_array.push(each_cont_details["occupation"])
+      end
+    end
+  end
+  ans_array[0]
 end
 
 def get_average_age_for_season(data, season)
