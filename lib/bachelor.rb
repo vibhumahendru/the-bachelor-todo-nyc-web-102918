@@ -1,12 +1,12 @@
-require "pry"
+
 def get_first_name_of_season_winner(data, season)
  answer = nil 
  data.each do |seasons, array_contestants|
    if seasons = season
      array_contestants.each do |each_cont_details|
-       if each_cont_details[:status] == "Winner"
-         answer = each_cont_details[:name]
-        binding.pry
+       if each_cont_details["status"] == "Winner"
+         answer = each_cont_details["name"]
+        
        end
      end
     end
