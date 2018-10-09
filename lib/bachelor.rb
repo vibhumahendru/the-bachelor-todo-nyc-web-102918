@@ -19,7 +19,7 @@ def get_contestant_name(data, occupation)
   answer = nil 
  data.each do |seasons, array_contestants|
      array_contestants.each do |each_cont_details|
-       if each_cont_details[""] == "Winner"
+       if each_cont_details["occupation"] == occupation
          answer = each_cont_details["name"]
         
        end
