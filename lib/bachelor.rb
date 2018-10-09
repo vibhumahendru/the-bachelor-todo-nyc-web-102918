@@ -60,6 +60,13 @@ def get_average_age_for_season(data, season)
   data.each do |seasons, array_contestants|
     if seasons == season
       array_contestants.each do |each_cont_details|
-        ans_array.push(each_cont_details["age"])
-        
+        ans_array.push(each_cont_details["age"].to_f)
+      end
+    end
+  end
+  ans_array.each do |ele|
+    counter += ele
+end
+y = counter/ans_array.length 
+y
 end
