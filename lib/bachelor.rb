@@ -68,5 +68,5 @@ def get_average_age_for_season(data, season)
     counter += ele
 end
 y = counter/ans_array.length 
-y
+y.round
 end
