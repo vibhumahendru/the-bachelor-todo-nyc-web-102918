@@ -35,6 +35,7 @@ data.each do |season, array_contestants|
   array_contestants.each do |each_cont_details|
     if each_cont_details["hometown"] == hometown
       counter += 1
+      break
     end
   end
 end
